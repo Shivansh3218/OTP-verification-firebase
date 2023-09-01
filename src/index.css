@@ -1,0 +1,88 @@
+body{
+  overflow: hidden;
+}
+
+.welcome-heading{
+  font-size: xx-large;
+}
+
+h1{
+  color: white;
+}
+.main-container{
+  width: 99vw;
+  height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp5193760.jpg");
+  display: flex;
+  background-position: center;
+  opacity: 0.8;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+#sendOTP,#verifyOTP{
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  margin-top: 1rem;
+  width: 100%;
+}
+#sendOTP:hover,#verifyOTP:hover{
+  background-color: rgb(41, 43, 59);
+  color: white;
+  cursor: pointer;
+}
+#otp-heading{
+color: aliceblue;
+}
+#login-container{
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ text-align: center;
+ font-weight: 700;
+}
+.spinner {
+  margin-top: 0.25rem;
+}
+#telephone-container{  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span{
+  font-size: 1.1rem;
+}
+#login-heading{
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.special-label{
+  visibility:hidden ;
+}
+
+.login-success{
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
